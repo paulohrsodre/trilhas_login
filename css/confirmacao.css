@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('/css/reset.css');
+
+* {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    --cor-principal: #F37820;
+    --cor-hover: #FF9F76;
+    --cor-botao-ativo: #EA580C;
+    --branco: #fff;
+    --cinza-escuro: #353535;
+    --cinza: #989692;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: var(--cor-principal);
+}
+
+.icone {
+    position: absolute;
+    padding: 20px 50px;
+    cursor: pointer;
+}.icone {
+    position: absolute;
+    padding: 20px 50px;
+    cursor: pointer;
+}
+
+.container__logado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.login__completo {
+    text-align: center;
+}
+
+.logo_trilhas-logado {
+    max-width: 50%;
+    height: auto;
+}
+
+.título__logado {
+    font-size: 64px;
+    color: var(--branco);
+}
+
+.mensagem__recuperacao-senha {
+    font-size: 32px;
+    text-align: center;
+    color: var(--branco);
+    padding: 20px;
+}

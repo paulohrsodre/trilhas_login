@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('/css/reset.css');
+@import url('/css/inscricao.css');
+@import url('/css/confirmacao.css');
+
+* {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    --cor-principal: #F37820;
+    --cor-hover: #FF9F76;
+    --cor-botao-ativo: #EA580C;
+    --branco: #fff;
+    --cinza-escuro: #353535;
+    --cinza: #989692;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: var(--cor-principal);
+}
+
+.icone {
+    position: absolute;
+    padding: 20px 50px;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 100%;
+}
+
+.container__login {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--branco);
+    width: 900px;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: 20px 0;
+}
+
+.form__titulo {
+    text-align: center;
+}
+
+.form__titulo-login,
+.form__recuperacao_titulo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--cor-principal);
+}
+
+.form__recuperacao_titulo {
+    font-size: 1.5rem;
+}
+
+.form_input-campos {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.form__input {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.form__label {
+    width: 100%;
+    position: absolute;
+    color: var(--cor-principal);
+    top: 0; bottom: 0; left: 0; right: 0;
+    transition: 0.3s;
+}
+
+.form__campo-texto {
+    position: relative;
+    padding: 10px;
+    box-sizing: content-box;
+    z-index: 2;
+    color: var(--cinza-escuro);
+    border: none;
+    border-bottom: 1px solid var(--cor-principal);
+}
+
+.form__campo-texto:focus + .form__label {
+    margin-top: 0px;
+    top: -50%;
+    z-index: 2;
+    transition: 0.2s;
+}
+
+.form__campo-texto:focus {
+    border-bottom-width: 2px;
+    outline: none;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form__links {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.form__link-esqueci-senha {
+    color: var(--cinza-escuro);
+}
+
+.form__link-esqueci-senha,
+.form__link-cadastro {
+    text-decoration: none;   
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.form__link-esqueci-senha:hover,
+.form__link-cadastro {
+    color: var(--cor-principal);
+}
+
+.form__link-cadastro:hover {
+    color: var(--cor-botao-ativo);
+}
+
+.form__botao {
+    bottom: 0;
+}
+
+.form__botao-login {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    color: var(--branco);
+    background: var(--cor-principal);
+    cursor: pointer;
+}
+
+.form__botao-login:hover {
+    background: var(--cor-hover);
+}
+
+.form__botao-login:focus {
+    background: var(--cor-botao-ativo);
+    transform: scale(0.95, 0.95);
+}
+
+.logo_trilhas {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.logo_inova {
+    max-width: 40%;
+    height: auto;
+    display: none;
+}
+
+.logo_gov,
+.logo_fapema {
+    width: 200px;
+}
+
+@media (max-width: 736px) {
+    .container{
+        padding: 20px;
+    }
+
+    .container__login {
+        flex-direction: column;
+        width: 80%;
+        align-items: center;
+    }
+
+    .logo_trilhas {
+        display: none;
+    }
+
+    .logo_inova {
+        display: block;
+    }
+}
+
+@media (max-width: 433px) {
+    .container{
+        padding: 20px;
+    }
+
+    .container__login {
+        width: 100%;
+    }
+}

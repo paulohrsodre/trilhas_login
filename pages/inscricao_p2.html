@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/inscricao.css">
+    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+
+<body>
+    <main class="container__inscricao">
+        <section class="formulario__inscricao">
+            <form action="" method="post" class="formulario_inscricao-form">
+                <div class="formulario__inscricao-titulo">
+                    <h1>Inscreva-se</h1>
+                </div>
+
+                <div class="formulario__inscricao-container">
+                    <div class="formulario__inscricao-campos">
+                        <input type="text" class="formulario__inscricao-input" placeholder="CEP"
+                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'CEP'">
+                        <label for="nome" class="formulario__inscricao-label">CEP</label>
+                    </div>
+
+                    <div class="formulario__inscricao-campos">
+                        <input type="text" class="formulario__inscricao-input" placeholder="Endereço"
+                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Endereço'">
+                        <label for="endereco" class="formulario__inscricao-label">Endereço</label>
+                    </div>
+
+                    <div class="formulario__inscricao-campos">
+                        <input type="text" class="formulario__inscricao-input" placeholder="Cidade"
+                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Cidade'">
+                        <label for="email" class="formulario__inscricao-label">Cidade</label>
+                    </div>
+
+                    <div class="formulario__inscricao-campos">
+                        <select name="estado" id="uf" class="formulario__inscricao-input select">
+                            <option value="selecione" selected disabled>Selecion um Estado</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                            <option value="EX">Estrangeiro</option>
+                        </select>
+                        <label for="telefone" class="formulario__inscricao-label">UF</label>
+                    </div>
+                </div>
+
+                </br>
+
+                <div class="botoes__navegacao">
+                    <a class="botao__navegacao-anterior" href="/pages/inscricao_p1.html">Anterior</a>
+                    <a class="botao__navegacao-proximo" href="/pages/inscricao_p3.html">Próximo</a>
+                </div>
+            </form>
+        </section>
+
+        <aside class="formulario__imagem">
+            <img src="/images/logo_trilhas.svg" class="formulario__imagem-logo" alt="Logo do Trilhas Inova Maranhão">
+        </aside>
+    </main>
+</body>
+
+</html>
